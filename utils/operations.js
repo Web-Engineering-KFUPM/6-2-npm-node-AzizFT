@@ -7,9 +7,9 @@ export function subtract(numbers) {
 }
 
 export function multiply(numbers) {
-  return 0;
+  return numbers.reduce((result, num) => result * num, 1);
 }
 
 export function divide(numbers) {
-  return 0;
+  return numbers.slice(1).reduce((result, num) => result / num, numbers[0]);
 }
