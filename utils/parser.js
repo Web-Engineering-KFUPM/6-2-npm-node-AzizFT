@@ -6,5 +6,6 @@ export function parseNumbers(input) {
 }
 
 export function isValidOperation(operation) {
-  return false;
+  const validOps = ["add", "subtract", "multiply", "divide"];
+  return _.includes(validOps, operation);
 }
